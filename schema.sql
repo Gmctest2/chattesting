@@ -71,5 +71,8 @@ create policy "messages supprimés par leur auteur"
 -- 5. Messages en direct
 alter publication supabase_realtime add table public.messages, public.rooms;
 
+-- La fonction du déclencheur ne doit pas être appelable depuis le site
+revoke execute on function public.handle_new_user() from public, anon, authenticated;
+
 -- 6. Deux salons de départ
 insert into public.rooms (name) values ('Général'), ('Aléatoire');

@@ -1,5 +1,7 @@
 # Pigeon : mise en ligne sur Netlify
 
+> **Déjà fait pour toi** : le projet Supabase « pigeon » est créé, `schema.sql` est déjà exécuté et `config.js` est déjà rempli. Passe directement à l'étape 3 (réglage e-mail), puis à l'étape 5 ou au déploiement GitHub, et termine par l'étape 6.
+
 Le site est une page statique (Netlify) qui parle à Supabase, un service gratuit qui gère les comptes, la base de données et les messages en direct. Compte une quinzaine de minutes.
 
 ## 1. Créer le projet Supabase
